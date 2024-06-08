@@ -1,0 +1,45 @@
+.section {
+    display: flex;
+    padding: 0px 20px;
+}
+.section i{
+    padding: 0px 20px;
+}
+.para{
+        padding: 0px 20px;
+    
+}
+.name {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+.form input{
+     height: 30px;
+     width: 200px; 
+     border-style: none;
+     background-color: #F2F3F7;
+     padding: 8px 50px;
+}
+.form textarea{
+    background-color: #F2F3F7;
+    border-style: none;
+    padding: 8px 50px;
+
+}
+.form{
+  padding-left: 20px;
+}
+.form button{
+    background-color: #2C98F0;
+    color: white;
+    border-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+.form{
+    width: 200px;
+}
+    
+}

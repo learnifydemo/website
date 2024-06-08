@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300..700&family=Rubik+Mono+One&display=swap');
+
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: "Quicksand", sans-serif; */
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333333;
+    width: 100%;
+}
+
+header .logo h3 {
+    color: white;
+    font-size: 30px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+/* <---hero-section----> */
+.hero {
+    /* height: calc(100vh - 98px); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0E9EB;
+}
+
+.hero .left h1 {
+    font-size: 50px;
+}
+
+.hero .left p {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.hero .left .button1 {
+    border: 2px solid rgb(40, 39, 39);
+    padding: 10px 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width:500px) {
+    nav {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+}

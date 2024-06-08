@@ -1,0 +1,162 @@
+.loader {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    background-color: aliceblue;
+    /* margin: 0 15px; */
+    /* padding: 10px 20px; */
+    border-radius: 7px;
+    padding: 0px 20px;
+
+}
+
+.skills {
+    padding: 0px 20px;
+
+}
+
+.loader .skill-box {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.skill-box .title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.skill-box .skill-bar {
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.skill-bar .skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 70%;
+    background: #4070f4;
+    border-radius: 6px;
+}
+
+.skill-per .tooltip {
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: white;
+    /* padding: 2px 6px; */
+    border-radius: 3px;
+    background-color: #4070f4;
+
+}
+
+@media screen and (min-width:320px) and (max-width: 425px) {
+    .skills {
+        text-align: center;
+    }
+
+    .loader {
+        width: 200px;
+    }
+}
+
+
+.load-container,
+.load-container2,
+.load-container3 {
+    margin: 20px 0px;
+}
+
+.load-container h4,
+.load-container2 h4,
+.load-container3 h4 {
+    margin: 0;
+}
+
+.loader-box,
+.loader-box2,
+.loader-box3 {
+    height: 20px;
+    width: 500px;
+    border-radius: 30px;
+    border: 2px solid #D4d4d4;
+}
+
+.loader-box p {
+    height: 100%;
+    width: 0%;
+    background-color: blue;
+    border-radius: 30px;
+    margin: 0;
+    position: relative;
+    animation: skill 2s forwards;
+}
+
+.loader-box p::before {
+    content: '75%';
+    position: absolute;
+    top: -30px;
+    right: 0;
+    font-weight: 500;
+}
+
+.loader-box2 p {
+    height: 100%;
+    width: 0%;
+    background-color: blue;
+    border-radius: 30px;
+    margin: 0;
+    position: relative;
+    animation: skill2 2s forwards;
+}
+
+.loader-box2 p::before {
+    content: '95%';
+    position: absolute;
+    top: -30px;
+    right: 0;
+    font-weight: 500;
+}
+
+.loader-box3 p {
+    height: 100%;
+    width: 0%;
+    background-color: blue;
+    border-radius: 30px;
+    margin: 0;
+    position: relative;
+    animation: skill3 2s forwards;
+}
+
+.loader-box3 p::before {
+    content: '100%';
+    position: absolute;
+    top: -30px;
+    right: 0;
+    font-weight: 500;
+}
+
+@keyframes skill {
+    to {
+        width: 75%;
+    }
+}
+
+@keyframes skill2 {
+    to {
+        width: 95%;
+    }
+}
+
+@keyframes skill3 {
+    to {
+        width: 100%;
+    }
+}
